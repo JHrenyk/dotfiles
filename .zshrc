@@ -261,6 +261,8 @@ alias dexec='docker exec -ti'
 alias docps='docker ps -a'
 alias dcrm='dcrun rm'
 alias docdf='docker system df'
+alias dlogs='docker logs -tf --tail="50"'
+
 
 # Set Color for TTY
 if [ "$TERM" = "linux" ]; then
