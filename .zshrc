@@ -244,8 +244,23 @@ alias cheatsheet-rsync="less ~/.oh-my-zsh/plugins/rsync/README.md"
 
 # Personal Aliases
 alias homevpn="sudo openvpn /home/jhrenyk/Openvpn/jhrenyk.ovpn"
+alias wg-up="sudo wg-quick up wg0"
 alias dirs="dirs -v"
 alias ssh-add='eval "$(ssh-agent -s)"'
+
+# Docker Aliases
+alias dstopcont='sudo docker stop $(docker ps -a -q)'
+alias dstopall='sudo docker stop $(sudo docker ps -aq)'
+alias drmcont='sudo docker rm $(docker ps -a -q)'
+alias dvolprune='sudo docker volume prune'
+alias dsysprune='sudo docker system prune -a'
+alias ddelimages='sudo docker rmi $(docker images -q)'
+alias docerase='dstopcont ; drmcont ; ddelimages ; dvolprune ; dsysprune'
+alias docprune='ddelimages ; dvolprune ; dsysprune'
+alias dexec='docker exec -ti'
+alias docps='docker ps -a'
+alias dcrm='dcrun rm'
+alias docdf='docker system df'
 
 # Set Color for TTY
 if [ "$TERM" = "linux" ]; then
