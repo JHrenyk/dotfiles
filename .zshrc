@@ -262,7 +262,8 @@ alias docps='docker ps -a'
 alias dcrm='dcrun rm'
 alias docdf='docker system df'
 alias dlogs='docker logs -tf --tail="50"'
-
+alias dcup='docker-compose up -d'
+alias dcdown='docker-compose down'
 
 # Set Color for TTY
 if [ "$TERM" = "linux" ]; then
