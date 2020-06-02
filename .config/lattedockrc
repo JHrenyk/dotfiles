@@ -2,8 +2,14 @@
 Height 1080=550
 Width 1920=800
 
+[KFileDialog Settings]
+detailViewIconSize=0
+
+[LatteSettingsDialog][TabLayouts]
+columnWidths=49,76,80,0
+
 [PlasmaRunnerManager]
-LaunchCounts=1 services_org.kde.kate.desktop,1 services_openarena.desktop,2 services_kvantummanager.desktop
+LaunchCounts=1 services_org.kde.kate.desktop,2 services_kvantummanager.desktop,3 services_retroarch.desktop,1 services_openarena.desktop
 pluginWhiteList=services,desktopsessions,PowerDevil,calculator,unitconverter,shell,bookmarks,baloosearch,locations
 
 [PlasmaThemeExtended]
@@ -17,14 +23,14 @@ outlineWidth=1
 [UniversalSettings]
 badges3DStyle=false
 canDisableBorders=false
-currentLayout=Work
+currentLayout=Unity
 downloadWindowSize=800,550
 hiddenConfigurationWindowsAreDeleted=true
 lastNonAssignedLayout=Unity
 launchers=
 layoutsColumnWidths=49,156,80,0,162
 layoutsWindowSize=1050,699
-memoryUsage=1
+memoryUsage=0
 metaPressAndHoldEnabled=true
 mouseSensitivity=2
 screenTrackerInterval=2500
