@@ -245,6 +245,7 @@ alias cheatsheet-rsync="less ~/.oh-my-zsh/plugins/rsync/README.md"
 # Personal Aliases
 alias homevpn="sudo openvpn /home/jhrenyk/Openvpn/jhrenyk.ovpn"
 alias wg-up="sudo wg-quick up wg0"
+alias wg-down="sudo wg-quick down wg0"
 alias dirs="dirs -v"
 alias ssh-add='eval "$(ssh-agent -s)"'
 
